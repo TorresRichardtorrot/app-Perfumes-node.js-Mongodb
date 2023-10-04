@@ -1,0 +1,56 @@
+{{#if isAdmin}}
+<div>
+    <div class="cardBox">
+        <div class="card">
+            <div>
+                <div class="numbers">1,504</div>
+                <div class="cardname">Vistas</div>
+            </div>
+            <div class="iconBx">
+                <ion-icon name="eye-outline"></ion-icon>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="numbers">100</div>
+                <div class="cardname">Ventas</div>
+            </div>
+            <div class="iconBx">
+                <ion-icon name="journal-outline"></ion-icon>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="numbers">$500</div>
+                <div class="cardname">Ganancias</div>
+            </div>
+            <div class="iconBx">
+                <ion-icon name="wallet-outline"></ion-icon>
+            </div>
+        </div>
+    </div>
+    <!-- Lista de ordenes -->
+    <div class="details">
+        <div class="recentOrders">
+            <div class="cardHeader">
+                <h2>Reciente</h2>
+                <a href="#" class="btn">Ver todo</a>
+            </div>
+            {{>tabla-estatus-cliente}}
+        </div>
+
+        <!-- Clientes -->
+        <div class="recentCustomer">
+            <div class="cardHeader">
+                <h2>Clientes</h2>
+            </div>
+            {{>clientes}}
+        </div>
+
+    </div>
+</div>
+{{else}}
+{{>tabla-pedidos}}
+{{/if}}

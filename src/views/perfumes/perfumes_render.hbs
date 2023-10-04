@@ -1,0 +1,23 @@
+<div id="" class="contenedor-tarjetas">
+    {{#each Perfumes}}
+    <div class="tarjeta">
+        <button class="boton-redondo"> <i class='bx bxs-basket bx-s' style='color:#f1f5f9'></i></button>
+        <img class="tarjeta-imagen" src="/img/{{image}}" alt="Imagen del producto">
+        <div class="tarjeta-contenido">
+            <h3 class="tarjeta-titulo">{{name}}-{{brand}}</h3>
+            <p class="tarjeta-precio">{{price}}</p>
+
+            <form action="/perfumes/edit/{{_id}}">
+                <button class="tarjeta-boton editar">Editar</button>
+            </form>
+
+            <form action="/perfumes/delete/{{_id}}/{{image}}?_method=DELETE" method="POST">
+                <input type="hidden" name="_method" value="DELETE">
+                <button class="tarjeta-boton eliminar">Eliminar</button>
+            </form>
+
+        </div>
+    </div>
+    {{/each}}
+
+</div>

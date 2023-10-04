@@ -1,0 +1,21 @@
+{{#if success_msg}}
+<div class="alert_message green" id="alert">
+    <h2>{{success_msg}}</h2>
+</div>
+{{/if}}
+
+{{#if error_msg}}
+<div class="alert_message red" id="alert">
+    <h2>{{error_msg}}</h2>
+</div>
+{{/if}}
+
+<script>
+    const alertContainer2 = document.getElementById('alert')
+    setTimeout(() => {
+        if (alertContainer2) {
+            alertContainer2.remove()
+        }
+    }, 4000);
+
+</script>

@@ -1,0 +1,23 @@
+<div id="" class="contenedor-tarjetas">
+
+    <div class="encabezado__cat">
+        <h1>Recomendados</h1>
+        <i class='bx bx-filter bx-md' style='color:#1b3693'></i>
+    </div>
+    {{#each perfumes}}
+
+    <div class="tarjeta">
+        <button class="boton-redondo"> <i class='bx bxs-basket bx-s' style='color:#f1f5f9'
+                title="Agregar al carrito"></i></button>
+
+        <a href="/perfumes/{{_id}}"> <img class="tarjeta-imagen" src="/img/{{image}}" alt="Imagen del producto"></a>
+        <div class="tarjeta-contenido">
+            <h3 class="tarjeta-titulo">{{name}}-{{brand}}</h3>
+            <p class="tarjeta-precio">${{price}}</p>
+            <a class="tarjeta-boton" href="/perfumes/{{_id}}">Ver màs</a>
+        </div>
+    </div>
+
+    {{/each}}
+
+</div>

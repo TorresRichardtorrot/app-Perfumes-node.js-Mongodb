@@ -1,0 +1,38 @@
+<div class="container-form">
+    <div class="information">
+        <div class="info-childs">
+            <h2>Bienvenido</h2>
+            <p>Para unirte a nuestra comunidad por favor inicia seccion con tus datos </p>
+            <a href="/users/signin" class="button">Iniciar Seccion</a>
+        </div>
+
+    </div>
+    <div class="form-information">
+        <div class="form-information-childs">
+            <h2>Crear una Cuenta</h2>
+            <div class="logo">
+                <a href="/"><img src="/img/8.png" alt="logo"></a>
+            </div>
+            <form class="form" action="/users/signup" method="POST">
+                <label for="name">
+                    <i class="bx bx-user"></i>
+                    <input type="text" name="name" placeholder="Nombre Completo" value="{{name}}" required>
+                </label>
+                <label for="email">
+                    <i class="bx bx-envelope"></i>
+                    <input type="email" name="email" placeholder="Correo electronico" autocomplete="none"
+                        value="{{email}}" required>
+                </label>
+                <label for="">
+                    <i class="bx bx-lock-alt"></i>
+                    <input type="password" name="password" placeholder="Contraseña" required>
+                </label>
+                <label for="">
+                    <i class="bx bx-lock-alt"></i>
+                    <input type="password" name="confirm_password" placeholder="Confirmar" required>
+                </label>
+                <input type="submit" value="Registrarse" class="button">
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+<div class="Logo">
+    <a href="/">
+        <div class="logo-img">
+            <img src="/img/favicon.png" alt="logo">
+        </div>
+    </a>
+
+
+    <div class="search__container">
+        <input type="search" class="search__input" placeholder="¿Que desea buscar?">
+        <button class="search__btn">
+            <img src="/img/search.svg" alt="">
+        </button>
+    </div>
+
+    <div class="navButtonContainer">
+        <a href="#"><i class='bx bxs-basket bx-sm' style='color:#f1f5f9'></i></a>
+        <a href="#"><i class='bx bx-calendar-event bx-sm' style='color:#f1f5f9'></i></a>
+        {{#if user}}
+        <a href="/client"><i class='bx bx-user-circle bx-sm' style='color:#f1f5f9'></i></a>
+        {{else}}
+        <a href="/users/signin"><i class='bx bx-user-circle bx-sm' style='color:#f1f5f9'></i></a>
+        {{/if}}
+    </div>
+
+</div>
+<div class="nav-hero">
+    <div class="navContainer">
+        <nav>
+            <ul>
+                <li>
+                    <a href="/catalogo">Catalogo</a>
+                    <ul>
+                        <li>
+                            <a href="#">Al haramai</a>
+                        </li>
+                        <li>
+                            <a href="#">Antonio Bandera</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/top">TOP 10</a>
+                </li>
+                <li>
+                    <a href="/novedades">Novedades</a>
+                </li>
+                <li>
+                    <a href="/test">Hacer el test</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

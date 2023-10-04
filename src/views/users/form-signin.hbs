@@ -1,0 +1,30 @@
+<div class="container-form">
+    <div class="information">
+        <div class="info-childs">
+            <h2>¡¡Bienvenido¡</h2>
+            <p>Para unirte a nuestra comunidad por favor registrese con tus datos </p>
+            <a href="/users/signup" class="button">Registrarse</a>
+        </div>
+
+    </div>
+    <div class="form-information">
+        <div class="form-information-childs">
+            <h2>Iniciar Seccion</h2>
+            <div class="logo">
+                <a href="/"><img src="/img/8.png" alt="logo"></a>
+            </div>
+
+            <form class="form" action="/users/signin" method="POST">
+                <label for="email">
+                    <i class="bx bx-envelope"></i>
+                    <input type="email" placeholder="Correo electronico" name="email">
+                </label>
+                <label for="password">
+                    <i class="bx bx-lock-alt"></i>
+                    <input type="password" placeholder="Contraseña" name="password">
+                </label>
+                <input type="submit" value="Iniciar" class="button">
+            </form>
+        </div>
+    </div>
+</div>

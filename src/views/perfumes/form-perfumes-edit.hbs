@@ -1,0 +1,40 @@
+<div class="content">
+    <div class="contact-wrapper animated bounceInUp">
+        <div class="contact-form">
+            <form action="/perfumes/edit/{{Perfume._id}}?_method=PUT" method="POST">
+                <input type="hidden" name="_method" value="PUT">
+                <p>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" value="{{Perfume.name}}" required> 
+                </p>
+                <p>
+                    <label for="brand">Marca</label>
+                    <input type="text" id="brand" name="brand" value="{{Perfume.brand}}" required>
+                </p>
+                <p>
+                    <label for="price">Precio</label>
+                    <input type="number" id="price" name="price" min="0" value="{{Perfume.price}}" required>
+                </p>
+                <p>
+                    <label for="category">Categoría</label>
+                    <select id="category" name="category" required>
+                        <option value="">Categoría</option>
+                        <option value="Dama">Dama</option>
+                        <option value="Caballero">Caballero</option>
+                    </select>
+                </p>
+                <p class="block">
+                    <label for="description">Descripción</label>
+                    <textarea id="description" name="description" rows="3">{{Perfume.description}}</textarea>
+                </p>
+                <p class="block">
+                    <button type="submit">Guardar</button>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+

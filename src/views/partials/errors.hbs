@@ -1,0 +1,23 @@
+{{#if error }}
+<div class="alert_message red" id="alert">
+    <h2>{{error}}</h2>
+</div>
+{{/if}}
+
+
+{{#each errors}}
+<div class="alert_message red" id="alert">
+    <h2>{{texto}}</h2>
+</div>
+{{/each}}
+
+<script>
+    const alertContainer = document.getElementById('alert')
+
+    setTimeout(() => {
+        if (alertContainer) {
+            alertContainer.remove()
+        }
+    }, 4000);
+
+</script>

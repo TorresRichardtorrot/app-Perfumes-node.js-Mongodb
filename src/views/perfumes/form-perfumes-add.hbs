@@ -1,0 +1,50 @@
+<div class="content">
+    <div class="contact-wrapper animated bounceInUp">
+        <div class="contact-form">
+            <form action="/perfumes/add" method="POST" enctype="multipart/form-data">
+                <p>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required> 
+                </p>
+                <p>
+                    <label for="brand">Marca</label>
+                    <input type="text" id="brand" name="brand" required>
+                </p>
+                <p>
+                    <label for="price">Precio</label>
+                    <input type="number" id="price" name="price" min="0" required>
+                </p>
+                <p>
+                    <label for="category">Categoría</label>
+                    <select id="category" name="category" required>
+                        <option value="">Categoría</option>
+                        <option value="Dama">Dama</option>
+                        <option value="Caballero">Caballero</option>
+                    </select>
+                </p>
+                <p class="block">
+                    <label for="description">Descripción</label>
+                    <textarea id="description" name="description" rows="3"></textarea>
+                </p>
+                <p class="block">
+                    <label for="image">Imagen</label>
+                    <div id="div_file">
+                        <p id="texto">Agregar Imagen</p>
+                        <input type="file" id="btn_enviar" name="image" accept="image/*" required>
+                    </div>
+                    <div id="content_name_img">
+                    <p id="name_image"></p>
+                </div>
+                </p>
+                
+                <p class="block">
+                    <button type="submit">Crear producto</button>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="/js/formPerfume.js"></script>

@@ -1,0 +1,57 @@
+<main>
+    <div class="container-img">
+        <img src="/img/{{image}}" alt="imagen-producto" />
+    </div>
+    <div class="container-info-product">
+        <div class="container-price">
+            <span>${{price}}</span>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div class="container-add-cart">
+            <div class="container-quantity">
+                <input type="number" placeholder="1" value="1" min="1" class="input-quantity" />
+                <div class="btn-increment-decrement">
+                    <i class='bx bx-chevron-up' id="increment"></i>
+                    <i class='bx bx-chevron-down' id="decrement"></i>
+                </div>
+            </div>
+            <button class="btn-add-to-cart">
+                <i class='bx bxs-basket bx-sm'></i>
+                Añadir al carrito
+            </button>
+        </div>
+
+        <div class="container-description">
+            <div class="title-description">
+                <h4>Descripción</h4>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="text-description">
+                <p>
+                    {{description}}
+                </p>
+            </div>
+        </div>
+
+        <div class="container-additional-information">
+            <div class="title-additional-information">
+                <h4>Información adicional</h4>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="text-additional-information hidden">
+                <p>-----------</p>
+            </div>
+        </div>
+
+        <div class="container-reviews">
+            <div class="title-reviews">
+                <h4>Reseñas</h4>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="text-reviews hidden">
+                <p>-----------</p>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="/js/perfume.js"></script>

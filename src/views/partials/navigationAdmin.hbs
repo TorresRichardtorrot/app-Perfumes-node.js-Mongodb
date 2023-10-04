@@ -1,0 +1,75 @@
+<nav class="navigation">
+    <ul>
+        <li>
+            <a href="/">
+                <span class="icon">
+                    <img src="/img/favicon.png" alt="logo">
+                </span>
+            </a>
+        </li>
+        {{#if isAdmin}}
+        <li class="hovered">
+            <a href="/admin">
+                <span class="icon"><ion-icon name="home-outline"></ion-icon>
+                </span>
+                <span class="title">Inicio</span>
+            </a>
+        </li>
+        <li>
+            <a href="/">
+                <span class="icon"><ion-icon name="document-attach-outline"></ion-icon></ion-icon></span>
+                <span class="title">Resumen</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                <span class="title">Clientes</span>
+            </a>
+        </li>
+        <li>
+            <a href="/">
+                <span class="icon"><ion-icon name="cart-outline"></ion-icon></span>
+                <span class="title">Pedidos</span>
+            </a>
+        </li>
+        <li>
+            <a href="/perfumes">
+                <span class="icon"><ion-icon name="construct-outline"></ion-icon></span>
+                <span class="title">Modificar Productos</span>
+            </a>
+        </li>
+        <li>
+            <a href="/perfumes/add">
+                <span class="icon"><ion-icon name="create-outline"></ion-icon></span>
+                <span class="title">Crear nuevo producto</span>
+            </a>
+        </li>
+        {{else}}
+        <li>
+            <a href="/">
+                <span class="icon"><ion-icon name="basket-outline"></ion-icon></span>
+                <span class="title">Pedidos</span>
+            </a>
+        </li>
+        <li>
+            <a href="/">
+                <span class="icon"><ion-icon name="create-outline"></ion-icon></span>
+                <span class="title">Crear Pedidos</span>
+            </a>
+        </li>
+        {{/if}}
+        <li>
+            <a href="/">
+                <span class="icon"><ion-icon name="eye-outline"></ion-icon></span>
+                <span class="title">Ver web</span>
+            </a>
+        </li>
+        <li>
+            <a href="/users/logout">
+                <span class="icon"><ion-icon name="exit-outline"></ion-icon></span>
+                <span class="title">Cerrar Sesión</span>
+            </a>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" href="/css/form-perfume.css">
+    <link rel="stylesheet" href="/css/tabla.css">
+    <title>Admin Panel</title>
+</head>
+
+<body>
+
+    {{>navigationAdmin}}
+
+    <section="container">
+        <main class="main">
+            {{>buscadorAdmin}}
+            {{>messages}}
+            {{>errors}}
+            {{{body}}}
+        </main>
+        </section>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="/js/admin.js"></script>
+</body>
+
+</html>
