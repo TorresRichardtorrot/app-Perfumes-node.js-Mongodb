@@ -19,13 +19,11 @@ Esta es una aplicación de práctica desarrollada en Node.js que incluye un pane
 - **Autenticación de Usuarios:** Utiliza Passport para autenticar a los usuarios que acceden al panel de administrador.
 - **Gestión de Imágenes:** Multer se utiliza para cargar y gestionar imágenes de productos.
 - **Base de Datos:** La información de los productos y los datos de autenticación se almacenan en una base de datos MongoDB.
-
-<br>
 ## Imagenes 
 
-<img url="https://github.com/TorresRichardtorrot/portafolio-estatico/blob/main/img/Boquets/1.png">
-<img url="https://github.com/TorresRichardtorrot/portafolio-estatico/blob/main/img/Boquets/2.png">
-<img url="https://github.com/TorresRichardtorrot/portafolio-estatico/blob/main/img/Boquets/3.png">
-<img url="https://github.com/TorresRichardtorrot/portafolio-estatico/blob/main/img/Boquets/4.png">
-<img url="https://github.com/TorresRichardtorrot/portafolio-estatico/blob/main/img/Boquets/5.png">
-<img url="https://github.com/TorresRichardtorrot/portafolio-estatico/blob/main/img/Boquets/6.png">
+<img src="https://github.com/TorresRichardtorrot/portafolio-estatico/blob/main/img/Boquets/1.png">
+<img src="https://github.com/TorresRichardtorrot/portafolio-estatico/blob/main/img/Boquets/2.png">
+<img src="https://github.com/TorresRichardtorrot/portafolio-estatico/blob/main/img/Boquets/3.png">
+<img src="https://github.com/TorresRichardtorrot/portafolio-estatico/blob/main/img/Boquets/4.png">
+<img src="https://github.com/TorresRichardtorrot/portafolio-estatico/blob/main/img/Boquets/5.png">
+<img src="https://github.com/TorresRichardtorrot/portafolio-estatico/blob/main/img/Boquets/6.png">
